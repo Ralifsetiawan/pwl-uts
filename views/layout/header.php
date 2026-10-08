@@ -5,9 +5,9 @@ $user  = $_SESSION['user'] ?? null; // data user yang lagi login
 
 // daftar menu sidebar: url => [label, icon]
 $menus = [
-    'account'      => ['Akun',       'bi-people-fill'],
-    'account-type' => ['Tipe Akun',  'bi-person-vcard-fill'],
-    'actions'      => ['Jenis Aksi', 'bi-lightning-charge-fill'],
+    'account'      => ['Akun',       'ri-team-fill'],
+    'account-type' => ['Tipe Akun',  'ri-id-card-fill'],
+    'actions'      => ['Jenis Aksi', 'ri-flashlight-fill'],
 ];
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ $menus = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= e($title ?? 'Manajemen Akun') ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link href="<?= BASE_URL ?>/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -26,7 +26,7 @@ $menus = [
 
         <div class="sidebar">
             <a href="<?= BASE_URL ?>/" class="sidebar-brand">
-                <span class="brand-mark"><i class="bi bi-shield-lock-fill"></i></span>
+                <span class="brand-mark"><i class="ri-shield-user-fill"></i></span>
                 Manajemen Akun
             </a>
 
@@ -34,7 +34,7 @@ $menus = [
                 <?php foreach ($menus as $url => [$label, $icon]): ?>
                     <li>
                         <a href="<?= BASE_URL ?>/<?= $url ?>" class="nav-link <?= $page === $url ? 'active' : '' ?>">
-                            <i class="bi <?= $icon ?>"></i> <?= $label ?>
+                            <i class="<?= $icon ?>"></i> <?= $label ?>
                         </a>
                     </li>
                 <?php endforeach; ?>
@@ -52,7 +52,7 @@ $menus = [
                         <!-- logout wajib POST (lihat $postOnlyActions di index.php) -->
                         <form action="<?= BASE_URL ?>/auth/logout" method="POST" class="d-inline">
                             <button type="submit" class="btn btn-outline-secondary btn-sm">
-                                <i class="bi bi-box-arrow-right"></i> Logout
+                                <i class="ri-logout-circle-r-line"></i> Logout
                             </button>
                         </form>
                     </div>

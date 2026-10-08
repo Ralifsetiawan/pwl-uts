@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Manajemen Akun</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
     <link href="<?= BASE_URL ?>/assets/css/style.css" rel="stylesheet">
 </head>
 <body style="min-height: 100vh; background: radial-gradient(circle at 20% 15%, rgba(255, 106, 19, 0.35), transparent 45%), linear-gradient(160deg, #1f1030 0%, #3a1458 100%);"
@@ -16,7 +16,7 @@
             <div class="text-center mb-4">
                 <span class="d-inline-flex align-items-center justify-content-center rounded-3 text-white mb-2"
                       style="width: 48px; height: 48px; background: linear-gradient(135deg, #ff8a3d, #ff6a13);">
-                    <i class="bi bi-shield-lock-fill fs-5"></i>
+                    <i class="ri-shield-user-fill fs-4"></i>
                 </span>
                 <h4 class="mb-1">Manajemen Akun</h4>
                 <p class="text-muted small mb-0">Masuk pakai email dan password kamu.</p>
@@ -37,7 +37,7 @@
                     <input type="password" name="password" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">
-                    <i class="bi bi-box-arrow-in-right"></i> Login
+                    <i class="ri-login-circle-line"></i> Login
                 </button>
             </form>
         </div>

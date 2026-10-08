@@ -3,13 +3,13 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="mb-0">Manajemen Tipe Akun</h4>
     <a href="<?= BASE_URL ?>/account-type/create" class="btn btn-primary btn-sm">
-        <i class="bi bi-plus-lg"></i> Tambah Tipe Akun
+        <i class="ri-add-line"></i> Tambah Tipe Akun
     </a>
 </div>
 
 <!-- form pencarian: GET ?q=kata-kunci -->
 <form action="<?= BASE_URL ?>/account-type" method="GET" class="input-group mb-3">
-    <span class="input-group-text"><i class="bi bi-search"></i></span>
+    <span class="input-group-text"><i class="ri-search-line"></i></span>
     <input type="text" name="q" class="form-control" value="<?= e($q) ?>" placeholder="Cari nama atau deskripsi...">
     <button class="btn btn-outline-primary" type="submit">Cari</button>
 </form>
@@ -37,11 +37,11 @@
                     <td><?= e(date('d M Y H:i', strtotime($row['created_at']))) ?></td>
                     <td class="text-end">
                         <a href="<?= BASE_URL ?>/account-type/<?= e($row['id']) ?>/edit" class="btn btn-outline-warning btn-sm">
-                            <i class="bi bi-pencil"></i>
+                            <i class="ri-edit-2-fill"></i>
                         </a>
                         <form action="<?= BASE_URL ?>/account-type/<?= e($row['id']) ?>/delete" method="POST" class="d-inline"
                               onsubmit="return confirm('Yakin hapus tipe akun ini?')">
-                            <button type="submit" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
+                            <button type="submit" class="btn btn-outline-danger btn-sm"><i class="ri-delete-bin-6-fill"></i></button>
                         </form>
                     </td>
                 </tr>

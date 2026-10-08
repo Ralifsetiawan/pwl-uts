@@ -3,13 +3,13 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="mb-0">Manajemen Akun</h4>
     <a href="<?= BASE_URL ?>/account/create" class="btn btn-primary btn-sm">
-        <i class="bi bi-plus-lg"></i> Tambah Akun
+        <i class="ri-add-line"></i> Tambah Akun
     </a>
 </div>
 
 <!-- form pencarian: GET ?q=kata-kunci -->
 <form action="<?= BASE_URL ?>/account" method="GET" class="input-group mb-3">
-    <span class="input-group-text"><i class="bi bi-search"></i></span>
+    <span class="input-group-text"><i class="ri-search-line"></i></span>
     <input type="text" name="q" class="form-control" value="<?= e($q) ?>"
            placeholder="Cari nama, email, NIM/NIP, atau tipe akun...">
     <button class="btn btn-outline-primary" type="submit">Cari</button>
@@ -49,12 +49,12 @@
                     </td>
                     <td class="text-end">
                         <a href="<?= BASE_URL ?>/account/<?= e($row['id']) ?>/edit" class="btn btn-outline-warning btn-sm">
-                            <i class="bi bi-pencil"></i>
+                            <i class="ri-edit-2-fill"></i>
                         </a>
                         <!-- hapus wajib POST + konfirmasi -->
                         <form action="<?= BASE_URL ?>/account/<?= e($row['id']) ?>/delete" method="POST" class="d-inline"
                               onsubmit="return confirm('Yakin hapus akun ini?')">
-                            <button type="submit" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
+                            <button type="submit" class="btn btn-outline-danger btn-sm"><i class="ri-delete-bin-6-fill"></i></button>
                         </form>
                     </td>
                 </tr>
