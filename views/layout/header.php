@@ -5,9 +5,9 @@ $user  = $_SESSION['user'] ?? null; // data user yang lagi login
 
 // daftar menu sidebar: url => [label, icon]
 $menus = [
-    'account'      => ['Akun',       'bi-people'],
-    'account-type' => ['Tipe Akun',  'bi-person-badge'],
-    'actions'      => ['Jenis Aksi', 'bi-lightning-charge'],
+    'account'      => ['Akun',       'bi-people-fill'],
+    'account-type' => ['Tipe Akun',  'bi-person-vcard-fill'],
+    'actions'      => ['Jenis Aksi', 'bi-lightning-charge-fill'],
 ];
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ $menus = [
 
         <div class="sidebar">
             <a href="<?= BASE_URL ?>/" class="sidebar-brand">
-                <span class="brand-mark"><i class="bi bi-shield-lock"></i></span>
+                <span class="brand-mark"><i class="bi bi-shield-lock-fill"></i></span>
                 Manajemen Akun
             </a>
 
